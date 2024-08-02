@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Angular Authentication Service\auth.service.ts" />
+  </ItemGroup>
+	<ProjectReference Include="..\angularwithasp.client\angularwithasp.client.esproj">
+		<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+	</ProjectReference>
+
+  <ItemGroup>
+    <PackageReference Include="Auth0.ManagementApi" Version="7.26.2" />
+    <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.7.400.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.0" />
+  </ItemGroup>
+
+</Project>
